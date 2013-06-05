@@ -1,2 +1,2 @@
-index.php
-application/database.php
+*.sublime-workspace
+*.sublime-project
