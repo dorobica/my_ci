@@ -1,6 +1,6 @@
 <?php
 /** 
- *	Breadcrumbs class
+ *	Breadcrumbs class***
  */
 class Breadcrumb {
 	private $base_url;
