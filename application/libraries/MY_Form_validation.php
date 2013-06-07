@@ -115,4 +115,28 @@ class MY_Form_validation extends CI_Form_validation {
         return ($year > 1800 && $year < 2099 && $cnp[12] == $hashResult);
     }
 
+    public function alpha_spaces($str){
+
+        return ( ! preg_match("/^([-a-z_ ])+$/i", $str)) ? FALSE : TRUE;
+    }
+
+    public function valid_cif($cif){
+
+        if (!is_numeric($cif)) return FALSE;
+        if ( strlen($cif)>10 ) return FALSE;
+
+        $cifra_control=substr($cif, -1);
+        $cif=substr($cif, 0, -1);
+        while (strlen($cif)!=9){
+        $cif='0'.$cif;
+        }
+        $suma=$cif[0] * 7 + $cif[1] * 5 + $cif[2] * 3 + $cif[3] * 2 + $cif[4] * 1 + $cif[5] * 7 + $cif[6] * 5 + $cif[7] * 3 + $cif[8] * 2;
+        $suma=$suma*10;
+        $rest=fmod($suma, 11);
+        if ( $rest==10 ) $rest=0;
+
+        if ($rest==$cifra_control) return TRUE;
+        else return FALSE;
+    }
+
 }
