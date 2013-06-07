@@ -10,7 +10,12 @@
 |
 */
 
-
+$hook['post_controller_constructor'] = array(
+		'class' => 'RedBeanHook',
+		'function' => '__init',
+		'filename' => 'RedBeanHook.php',
+		'filepath' => 'hooks'
+	);
 
 /* End of file hooks.php */
 /* Location: ./application/config/hooks.php */
