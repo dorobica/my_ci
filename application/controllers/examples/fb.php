@@ -1,9 +1,9 @@
 <?php
 
 class Fb extends CI_Controller {
-	
+
 	public function index(){
-		$this->load->library('facebook');
+		$this->load->library('facebook_lib');
 
 		$facebook = new Facebook(array(
 			'appId' => FB_APP_ID,
@@ -12,6 +12,6 @@ class Fb extends CI_Controller {
 
 		$user = $facebook->getUser();
 
-		
+		echo $user;
 	}
 }

@@ -41,7 +41,7 @@ define('FB_APP_ID', '');
 define('FB_APP_SECRET', '');
 
 define('FB_APP_CANVAS_URL', '');
-define('FB_APP_CREDENTIALS' '');
+define('FB_APP_CREDENTIALS', '');
 
 /* End of file constants.php */
 /* Location: ./application/config/constants.php */
