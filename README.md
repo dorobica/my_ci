@@ -1,2 +1,2 @@
-Defautl CI application
+Default CI application
 ======================

@@ -36,6 +36,12 @@ define('FOPEN_READ_WRITE_CREATE',				'a+b');
 define('FOPEN_WRITE_CREATE_STRICT',				'xb');
 define('FOPEN_READ_WRITE_CREATE_STRICT',		'x+b');
 
+/* Facebook lib specific constants */
+define('FB_APP_ID', '');
+define('FB_APP_SECRET', '');
+
+define('FB_APP_CANVAS_URL', '');
+define('FB_APP_CREDENTIALS', '');
 
 /* End of file constants.php */
 /* Location: ./application/config/constants.php */
